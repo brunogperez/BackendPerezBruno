@@ -109,5 +109,6 @@ console.log(productManager.getProducts())
 //Buscamos productos por ID
 console.log(productManager.getProductByID(2))
 console.log(productManager.getProductByID(1))
+
 //Buscamos un producto con un ID inexsistente
 console.log(productManager.getProductByID(8))
