@@ -1,0 +1,223 @@
+[
+	{
+	  "id": 1,
+	  "title": "parlante JBL",
+	  "description": "potente parlante de uso externo",
+	  "price": 1570,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "001",
+	  "stock": 25,
+	  "category": "Audio",
+	  "status": true
+	},
+	{
+	  "id": 2,
+	  "title": "smartphone Samsung",
+	  "description": "telefono inteligente de alta gama",
+	  "price": 10000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "002",
+	  "stock": 10,
+	  "category": "Electrónica",
+	  "status": true
+	},
+	{
+	  "id": 3,
+	  "title": "laptop HP",
+	  "description": "computadora portatil de ultima generacion",
+	  "price": 8500,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "003",
+	  "stock": 15,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 4,
+	  "title": "televisor LG",
+	  "description": "televisor de pantalla plana de 50 pulgadas",
+	  "price": 6000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "004",
+	  "stock": 20,
+	  "category": "Electrónica",
+	  "status": true
+	},
+	{
+	  "id": 5,
+	  "title": "auriculares Sony",
+	  "description": "auriculares inalambricos con cancelacion de ruido",
+	  "price": 2500,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "005",
+	  "stock": 30,
+	  "category": "Audio",
+	  "status": true
+	},
+	{
+	  "id": 6,
+	  "title": "tablet Lenovo",
+	  "description": "tablet con pantalla tactil de 10 pulgadas",
+	  "price": 3500,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "006",
+	  "stock": 12,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 7,
+	  "title": "camara Canon",
+	  "description": "camara fotografica profesional de 24 megapixeles",
+	  "price": 4500,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "007",
+	  "stock": 8,
+	  "category": "Fotografía",
+	  "status": true
+	},
+	{
+	  "id": 8,
+	  "title": "reloj inteligente Apple",
+	  "description": "reloj con funciones inteligentes y monitor de actividad",
+	  "price": 8000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "008",
+	  "stock": 5,
+	  "category": "Wearables",
+	  "status": true
+	},
+	{
+	  "id": 9,
+	  "title": "consola de videojuegos Xbox",
+	  "description": "consola de videojuegos con capacidad de reproduccion de Blu-ray",
+	  "price": 9000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "009",
+	  "stock": 7,
+	  "category": "Videojuegos",
+	  "status": true
+	},
+	{
+	  "id": 10,
+	  "title": "impresora Epson",
+	  "description": "impresora multifuncional de tinta continua",
+	  "price": 3000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "010",
+	  "stock": 18,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 11,
+	  "title": "monitor Samsung",
+	  "description": "monitor de 27 pulgadas con resolucion 4K",
+	  "price": 4500,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "011",
+	  "stock": 11,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 12,
+	  "title": "teclado inalambrico Logitech",
+	  "description": "teclado inalambrico con retroiluminacion",
+	  "price": 1500,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "012",
+	  "stock": 22,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 13,
+	  "title": "raton gamer Razer",
+	  "description": "raton inalambrico con sensor optico de alta precision",
+	  "price": 2000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "013",
+	  "stock": 14,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 14,
+	  "title": "cargador portatil Anker",
+	  "description": "cargador portatil con capacidad de 20000mAh",
+	  "price": 1000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "014",
+	  "stock": 28,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 15,
+	  "title": "disco duro externo Seagate",
+	  "description": "disco duro externo de 2TB de capacidad",
+	  "price": 3000,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "015",
+	  "stock": 9,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 16,
+	  "title": "router TP-Link",
+	  "description": "router inalambrico de alta velocidad",
+	  "price": 800,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "016",
+	  "stock": 35,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 17,
+	  "title": "tarjeta de memoria SanDisk",
+	  "description": "tarjeta de memoria microSD de 128GB",
+	  "price": 500,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "017",
+	  "stock": 42,
+	  "category": "Informática",
+	  "status": true
+	},
+	{
+	  "id": 18,
+	  "title": "cable HDMI",
+	  "description": "cable HDMI de 2 metros de longitud",
+	  "price": 200,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "018",
+	  "stock": 50,
+	  "category": "Accesorios para Dispositivos",
+	  "status": true
+	},
+	{
+	  "id": 19,
+	  "title": "bocinas Logitech",
+	  "description": "bocinas para PC con sonido envolvente",
+	  "price": 1200,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "019",
+	  "stock": 17,
+	  "category": "Audio",
+	  "status": true
+	},
+	{
+	  "id": 20,
+	  "title": "cargador inalambrico Samsung",
+	  "description": "cargador inalambrico compatible con dispositivos Qi",
+	  "price": 700,
+	  "thumbnail": "https://imagen_producto.jpg",
+	  "code": "020",
+	  "stock": 23,
+	  "category": "Accesorios para Dispositivos",
+	  "status": true
+	}
+  ]
+  
