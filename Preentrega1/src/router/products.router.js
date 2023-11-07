@@ -1,8 +1,10 @@
 import { Router } from 'express'
-import { productManager } from '../managers/productManager.js'
+import  { ProductManager } from '../managers/productManager.js'
 import { storageMulter } from '../multer.js'
 
 const router = Router()
+const productManager = new ProductManager('.src/api/products.json')
+
 const products = await productManager.getProducts()
 
 

@@ -1,6 +1,9 @@
 import express from 'express'
 import { Server } from 'socket.io'
 import __dirname from './utils.js'
+import productsRouter from './routes/products.router.js'
+import cartsRouter from './routes/carts.router.js'
+import viewsRouter from './routes/views.router.js'
 
 
 const app = express()
@@ -14,9 +17,9 @@ app.use(express.urlencoded({ extended: true }))
 const httpServer = app.listen(PORT, () => console.log(`Server is running in port ${PORT}`))
 httpServer.on('error', error => console.log(error))
 
-const socketServer = new Server(httpServer)
+const io = new Server(httpServer)
 
-app.set('socketio', socketServer)
+app.set('socketio', io)
 app.use(express.static(__dirname + '/public'))
 
 app.engine('handlebars', handlebars.engine())

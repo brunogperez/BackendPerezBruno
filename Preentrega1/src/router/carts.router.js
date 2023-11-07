@@ -2,7 +2,7 @@ import { Router } from 'express'
 import { CartManager } from '../managers/cartManager.js'
 
 const router = Router()
-const cartManager = new CartManager()
+const cartManager = new CartManager('.src/api/carts.json')
 
 router.get('/', async (req, res) => {
     try {
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:cid', async (req, res) => {
     const id = parseInt(req.params.cid)
-    const cart = await cartManager.getCartById(id)
+    const cart = await cartManager.getCartsById(id)
     res.send(cart)
 
 })

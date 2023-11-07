@@ -1,6 +1,6 @@
 import fs from 'fs'
 
-class ProductManager {
+export class ProductManager {
 
     #format
 
@@ -73,8 +73,7 @@ class ProductManager {
         return product
     }
 
-    updateProduct = async (id, update) => {
-        // const products = await this.getProducts()   
+    updateProduct = async (id, update) => { 
         const index = this.products.findIndex(p => p.id === id)
 
         if (index !== -1) {
@@ -108,4 +107,4 @@ class ProductManager {
     }
 }
 
-export const productManager = new ProductManager('./api/products.json')
+export const productManager = new ProductManager()

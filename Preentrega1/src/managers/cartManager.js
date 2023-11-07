@@ -91,4 +91,4 @@ export class CartManager {
     }
 }
 
-export const cartManager = new CartManager('./api/carts.json')
+export const cartManager = new CartManager()

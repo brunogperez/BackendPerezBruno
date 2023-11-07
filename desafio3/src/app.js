@@ -15,7 +15,7 @@ app.get('/products', async (req, res) => {
             res.send(prodLimited)
         }
     } catch (error) {
-        res.send('No se encontraron los productos')
+        res.status(404).send('No se encontraron los productos')
     }
 })
 
