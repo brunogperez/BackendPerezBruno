@@ -35,7 +35,6 @@ form.addEventListener('submit', async (e) => {
             if (results.status === 'error') {
                 throw new Error(results.error)
             } else {
-                socket.emit('productList', results.products)
 
                 Toastify({
                     text: 'New product added successfully',
@@ -74,7 +73,7 @@ const deleteProduct = async (id) => {
         const result = await res.json()
 
         if (result.status === 'error') throw new Error(result.error)
-        else socket.emit('productList', result.products)
+        
 
         Toastify({
             text: 'Product removed successfully',

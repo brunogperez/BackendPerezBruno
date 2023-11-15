@@ -2,7 +2,7 @@
   "name": "desafio4",
   "version": "1.0.0",
   "description": "",
-  "main": "scr/app.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
     "start": "node .",

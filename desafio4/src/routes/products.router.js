@@ -87,7 +87,7 @@ router.put('/:pid', async (req, res) => {
         const updatedProducts = await productManager.getProducts() 
 
         req.app.get('socketio').emit('updatedProducts', updatedProducts)
-        // req.io.emit('updatedProducts', updatedProducts)
+        
         res.status(200).json({ message: `Successful update of product with id ${productId}` })
     } catch (error) {
         console.log(error)
@@ -111,7 +111,7 @@ router.delete('/:pid', async (req, res) => {
         const updatedProducts = await productManager.getProducts()
         
         req.app.get('socketio').emit('updatedProducts', updatedProducts)
-        // req.io.emit('updatedProducts', updatedProducts)
+        
         res.status(200).json({ message: `Product with id ${productId} removed successfully`, products: await productManager.getProducts() })
     } catch (error) {
         console.log(error)
