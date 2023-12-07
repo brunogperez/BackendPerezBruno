@@ -1,8 +1,22 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
     <div class="container-fluid px-3">
         <a class="navbar-brand btn btn-primary badge fw-bold text-white" href="/products/carts/64a4619f684402305a4ab6fa" style="font-size: 1rem; padding: 10px;">Carrito</a>
+
+        {{#if user}}
+            <a href="/sessions/logout" class="btn btn-secondary rounded-pill fw-bold ms-auto me-0">Logout</a>
+        {{else}}
+            <a href="/sessions/login" class="btn btn-secondary rounded-pill fw-bold ms-auto me-0">Login</a>
+        {{/if}}
     </div>
 </nav>
+
+
+{{#if user}}
+    <div class="p-3 m-1 border border-dark rounded-3 d-inline-block shadow">
+        <h1>Bienvenido {{user.role}}: {{user.first_name}} {{user.last_name}}!</h1>
+    </div>
+{{/if}}
+
 
 <div class="container py-5">
 
@@ -35,6 +49,10 @@
                         <option value="">Todos</option>
                         <option value="Electrónica">Electrónica</option>
                         <option value="Celulares">Celulares</option>
+                        {{!-- <option value='Secos'>Secos</option>
+                        <option value='Húmedos'>Húmedos</option>
+                        <option value='Dieta Prescripta'>Dieta Prescripta</option>
+                        <option value='Golosinas'>Golosinas</option> --}}
                     </select>
                 </div>
 
@@ -57,45 +75,45 @@
 
     <div class="row">
         {{#each products.docs}}
-        <div class="col-md-12 col-lg-4 mb-3">
-            <div class="card">
+            <div class="col-md-12 col-lg-4 mb-3">
+                <div class="card">
 
-                <div class="d-flex justify-content-between p-3">
-                    <button class="btn btn-outline-primary rounded-pill lead mb-0" onclick="addCart(`{{this._id}}`)">Agregar a Carrito</button>
-                    <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong" style="width: 35px; height: 35px;">
-                        <a href="http://localhost:8080/products/product/{{this._id}}" class="btn btn-info text-white mb-0 small rounded-circle">Info </a>
-                    </div>
-                </div>
-
-                <div class="aspect-ratio-box">
-                    <img src="/img/{{this.thumbnails.[0]}}" class="card-img-top img-fluid p-2 aspect-ratio-box-inside"
-                    alt="{{this.title}}" />
-                </div>
-
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <p class="small"><a href="#!" class="text-muted">{{this.category}}</a></p>
-                        <p class="small text-danger"><s>${{this.price}}</s></p>
+                    <div class="d-flex justify-content-between p-3">
+                        <button class="btn btn-outline-primary rounded-pill lead mb-0" onclick="addCart(`{{this._id}}`)">Agregar a Carrito</button>
+                        <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong" style="width: 35px; height: 35px;">
+                            <a href="http://localhost:8080/products/product/{{this._id}}" class="btn btn-info text-white mb-0 small rounded-circle">Info </a>
+                        </div>
                     </div>
 
-                    <div class="d-flex justify-content-between mb-3">
-                        <h5 class="mb-0">{{this.title}}</h5>
-                        <h5 class="text-dark mb-0">${{this.price}}</h5>
+                    <div class="aspect-ratio-box">
+                        <img src="/img/{{this.thumbnails.[0]}}" class="card-img-top img-fluid p-2 aspect-ratio-box-inside"
+                        alt="{{this.title}}" />
                     </div>
 
-                    <div class="d-flex justify-content-between mb-2">
-                        <p class="text-muted mb-0">Stock Disponible: <span class="fw-bold">{{this.stock}}</span></p>
-                        <div class="ms-auto text-warning">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <p class="small"><a href="#!" class="text-muted">{{this.category}}</a></p>
+                            <p class="small text-danger"><s>${{this.price}}</s></p>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <h5 class="mb-0">{{this.title}}</h5>
+                            <h5 class="text-dark mb-0">${{this.price}}</h5>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <p class="text-muted mb-0">Stock Disponible: <span class="fw-bold">{{this.stock}}</span></p>
+                            <div class="ms-auto text-warning">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         {{/each}}
     </div>
 </div>
